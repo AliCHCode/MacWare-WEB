@@ -1,0 +1,274 @@
+@media screen and (max-width:1200px) {
+    .mac-container{
+        padding: 0 5%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .contentSection2{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 0px;
+    }
+    .contentSection3{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .contentSection2textSection{
+        width: 95%;
+        align-items: center;
+        text-align: center;
+    }
+    .contentSection3textSection{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .detailBox2{
+        align-self: center;
+    }
+    
+}
+@media screen and (max-width:950px) {
+    .serviceBoxes{
+        width: 48%;
+        padding: 15px 25px;
+        margin: 0 auto;
+        margin-bottom: 3%;
+    }
+}
+@media screen and (max-width:872px) {
+    .Menu{
+        width: 555.50px;
+    }
+    .menuBoxes:last-child{
+        padding-right: 15px;
+    }
+    
+}
+@media screen and (max-width: 680px) {
+    .formFooter{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 0;
+    }
+    .sendButton{
+        align-self: flex-start;
+    }
+    .formBox{
+        width: 75%;
+    }
+    .formBox:first-child{
+        width: 75%;
+    }
+    
+    
+}
+@media screen and (max-width:650px) {
+    .serviceTitleBox{
+        width: 85%  ;
+        text-align: center;
+        margin: 0 auto 30px auto;
+        padding-left: 0px;
+    }
+
+    .serviceBoxes{
+        width: 85%;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .serviceBoxes:last-child{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:619px) {
+    .menuBoxes{
+        margin-bottom: 15px;
+    }
+    .navbar{
+        margin-bottom: 159px;
+    }
+    .menuBoxes:nth-child(5){
+        border-right: none;
+    }
+}
+@media screen and (max-width:557px) {
+
+    .footerContainer{
+        margin-bottom: 50px;
+    }
+    .footerLogoSection{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .footerLowerSection{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .footerLowerLogos{
+        flex-direction: column;
+        align-self: center;
+        width: 45%;
+        gap: 15px;
+    }
+    .footerLowerLogoLink2
+    {
+        width: 110%;
+    }
+    .footerLocationSection{
+        margin-left: 1%;
+        margin-bottom: 75px;
+    }
+    .footerLocationİcon{
+        display:none;
+    }
+  
+}
+@media screen and (max-width:526px) {
+    .menuBoxes:nth-child(4){
+        border-right: none;
+    }
+    .menuBoxes:nth-child(5){
+        border-right: 1px solid white;
+    }
+    
+
+}
+@media screen and (max-width:418px) {
+    .menuBoxes:nth-child(5){
+        border-right: none;
+    }
+    .menuBoxes:nth-child(4){
+        border-right: 1px solid white;
+    }
+    .menuBoxes:nth-child(1){
+        order:  1;
+    }
+    .menuBoxes:nth-child(2){
+        order:  2;
+    }
+    .menuBoxes:nth-child(3){
+        order:  3;
+    }
+    .menuBoxes:nth-child(4){
+        order:  5;
+    }
+    .menuBoxes:nth-child(5){
+        order:  4;
+    }
+    .menuBoxes:nth-child(6){
+        order:  6;
+    }
+}
+@media screen and (max-width: 400px) {
+    .formİmage{
+        width: 100%;
+    }
+    .footerMacLogo{
+        width: 84%;
+    }
+    .contentSection2icon{
+        width: 84%;
+    }
+    .contentSection3icon{
+        width: 84%;
+    }
+
+}
+@media screen and (max-width: 351px) {
+    .menuBoxes:nth-child(3){
+        border-right: none;
+    }
+    .menuBoxes:nth-child(4){
+        border-right: none;
+    }
+    .menuBoxes:nth-child(5){
+        border-right: 1px solid white;
+    }
+    .menuBoxes:nth-child(4){
+        order:  6;
+    }
+    .menuBoxes:nth-child(6){
+        order:  4;
+    }
+}
+@media screen and (max-width: 300px) {
+    *{
+        hyphens: auto;
+    }
+    .contentSection1{
+        word-break:break-word;
+    }
+    .contentSection2{
+        word-break:break-word;
+    }
+    .contentSection3{
+        word-break:break-word;
+    }
+    .servicesSelectSectionContainer{
+        word-break:break-word;
+    }
+    .serviceBoxes{
+        height: 1%;
+    }
+    .serviceTitle{
+        word-break:break-word;
+    }
+    .serviceContent{
+        word-break:break-word;
+    }
+    .galleryHeaderSection{
+        word-break:break-word;
+    }
+    .formContentSection {
+        word-break:break-word;
+    }
+    .footerLocationContent{
+        word-break: break-word;
+    }
+}   
+@media screen and (max-width: 244px) {
+    .menuBoxes:nth-child(2){
+        border-right: none;
+    }
+    .menuBoxes:nth-child(5){
+        border-right: none;
+    }
+    .menuBoxes:nth-child(3){
+        border-right: 1px solid white;
+    }
+    .menuBoxes:nth-child(4){
+        order:  5;
+    }
+    .menuBoxes:nth-child(6){
+        order:  6;
+    }
+}
+@media screen and (max-width: 186px) {
+    .menuBoxes:nth-child(3){
+        border-right: none;
+    }
+    .menuBoxes:nth-child(6){
+        border-right: 1px solid white;
+    }
+    .menuBoxes:nth-child(4){
+        order:  3;
+    }
+    .menuBoxes:nth-child(6){
+        order:  4;
+    }
+    .menuBoxes:nth-child(5){
+        order:  6;
+    }
+    .menuBoxes:nth-child(3){
+        order:  5;
+    }
+}

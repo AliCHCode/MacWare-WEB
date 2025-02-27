@@ -36,11 +36,12 @@ body {
 .mac-container {
     width: 1200px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
 @media screen and (max-width: 1200px) {
     .mac-container {
-        width: 100%;
+        width: 100vw;
     }
     
 }
@@ -77,9 +78,11 @@ body {
 }
 
 
-header{
+.navbar{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content:space-between;
     align-items: center;
     margin-bottom: 189px;
@@ -93,15 +96,14 @@ header{
     opacity: 0.7;
 }
 .Menu{
+    width: 540.50px;
     display: flex;
+    flex-wrap: wrap;
 }
 .menuBoxes{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    font-size: 1.2rem;
-    font-weight: 500;
     font-family: 'Oswald';
     font-style: normal;
     border-right: 1px solid white;
@@ -172,18 +174,16 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-left: 6%;
     margin-bottom: 175px;
 }
 .contentSection2icon{
     width: 300px;
-    margin-right: 4%;
-    margin-left: 6%;
 }
 .contentSection2textSection{
     width: 783px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .contentSection2textBox1{
     font-family: 'inter';
@@ -192,6 +192,7 @@ header{
     font-style: normal;
     line-height: normal;
     letter-spacing: 3px;
+    margin-bottom: 30px;
 }
 .contentSection2textBox2{   
     font-family: 'inter';
@@ -200,6 +201,7 @@ header{
     font-style: normal;
     line-height: 35px;
     letter-spacing: 1px;    
+    margin-bottom: 30px;
 }
 .contentSection2textBox3{
     font-family: 'oswald';
@@ -207,6 +209,7 @@ header{
     font-size: 2.25rem;
     font-style: normal;
     line-height: 35px;
+    margin-bottom: 30px;
 }
 .detailBox1{
     display: flex;
@@ -232,21 +235,25 @@ header{
     justify-content: space-between;
     width: 100%;
     margin-bottom: 175px;
+    gap: 30px;
     flex-direction: row-reverse;
+
 }
 .contentSection3icon{
     width: 300px;
-    margin-right: 4%;
-    margin-left: 6%;
+    border: 1px solid red;
+    
 }
 .contentSection3textSection{
     width: 783px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid red;
+    text-align: right;
+    
 }
 .contentSection3textBox1{
-    text-align: right;
     font-family: 'inter';
     font-weight: 300;
     font-size: 3rem;
@@ -257,13 +264,13 @@ header{
 }
 
 .contentSection3textBox2{
-    text-align: right;
     font-family: 'inter';
     font-weight: 300;
     font-size: 1.5rem;
     font-style: normal;
     line-height: 35px;
     margin-bottom: 25px;
+    letter-spacing: 0.5px;
 }
 .detailBox2{
     align-self: flex-end;
@@ -377,7 +384,7 @@ header{
     gap: 10px;
     font-family: 'oswald';
     font-size: 24px;
-    transition: gap 0.5s,padding-left 0.5s;
+    transition: gap 0.5s, padding-left 0.5s;
     cursor: pointer;
 }
 .servicesDetailBox:hover{
