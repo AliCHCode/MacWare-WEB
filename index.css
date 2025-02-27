@@ -36,7 +36,6 @@ body {
 .mac-container {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 @media screen and (max-width: 1200px) {
@@ -225,7 +224,7 @@ body {
     transition:background-color 0.5s;
 }
 .detailBox1:hover{
-    background-color: rgba(194, 255, 66, 0.8);
+    background-color: rgba(140, 6, 6, 1) ;
 }
 
 
@@ -241,7 +240,6 @@ body {
 }
 .contentSection3icon{
     width: 300px;
-    border: 1px solid red;
     
 }
 .contentSection3textSection{
@@ -249,7 +247,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid red;
     text-align: right;
     
 }
@@ -287,7 +284,7 @@ body {
     transition: background-color 0.5s;
 }
 .detailBox2:hover{
-    background-color: rgba(194, 255, 66, 0.8);
+    background-color: rgba(140, 6, 6, 1) ;
 }
 
 
@@ -388,8 +385,8 @@ body {
     cursor: pointer;
 }
 .servicesDetailBox:hover{
-    gap: 13px;
-    padding-left: 5px;
+    gap: 11px;
+    padding-left: 3px;
 }
 
 .gallerySectionContainer{
@@ -560,6 +557,7 @@ body {
     padding-right: 150px;
 }
 .sendButton{
+    all: unset;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -573,7 +571,7 @@ body {
     transition: background-color 0.5s;
 }
 .sendButton:hover{
-    background-color: rgba(194, 255, 66, 0.8);
+    background-color: rgba(140, 6, 6, 1) ;
 }
 
 .footerContainer{
