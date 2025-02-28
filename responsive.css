@@ -92,9 +92,9 @@
     .menuBoxes{
         margin-bottom: 15px;
     }
-    .navbar{
+    /* .navbar{
         margin-bottom: 159px;
-    }
+    } */
     .menuBoxes:nth-child(5){
         border-right: none;
     }
