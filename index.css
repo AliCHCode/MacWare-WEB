@@ -36,6 +36,7 @@ body {
 .mac-container {
     width: 1200px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
 @media screen and (max-width: 1200px) {

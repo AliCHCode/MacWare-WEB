@@ -3,7 +3,14 @@
         padding: 0 5%;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width:950px) {
+    .serviceBoxes{
+        width: 48%;
+        padding: 15px 25px;
+        margin: 0 auto;
+        margin-bottom: 3%;
+    }
+@media screen and (max-width: 950px) {
     .contentSection2{
         flex-wrap: wrap;
         justify-content: center;
@@ -17,27 +24,29 @@
     }
     .contentSection2textSection{
         width: 95%;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
     }
     .contentSection3textSection{
         width: 95%;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: left;
+    }
+    .detailBox1{
+        align-self: flex-start;
     }
     .detailBox2{
-        align-self: center;
+        align-self: flex-start;
+    }
+    .contentSection2icon{
+        width: 38%;
+    }
+    .contentSection3icon{
+        width: 38%;
     }
     
 }
-@media screen and (max-width:950px) {
-    .serviceBoxes{
-        width: 48%;
-        padding: 15px 25px;
-        margin: 0 auto;
-        margin-bottom: 3%;
-    }
 }
 @media screen and (max-width:872px) {
     .Menu{
@@ -169,18 +178,18 @@
     }
 }
 @media screen and (max-width: 400px) {
-    .formİmage{
-        width: 100%;
-    }
     .footerMacLogo{
         width: 84%;
     }
-    .contentSection2icon{
+    .formİmage{
+        width: 100%;
+    }
+    /* .contentSection2icon{
         width: 84%;
     }
     .contentSection3icon{
         width: 84%;
-    }
+    } */
 
 }
 @media screen and (max-width: 351px) {
