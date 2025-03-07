@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('deneme');
+    console.log('index.js activated');
 
     let indexElements = document.querySelectorAll('.serviceContentİndex');
     let detailBoxElements = document.querySelectorAll('.servicesDetailBox');
