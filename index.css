@@ -7,11 +7,19 @@
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 100vw;
     overflow-x: hidden;
     position: relative;
     background-color: black;
+}
+
+a{
+    text-decoration: none;
 }
 
 .mac-main-bg{
@@ -112,14 +120,15 @@ body {
     font-size: 1.5rem;
     padding: 0 15px;
     text-decoration: none;
-    transition: opacity 0.3s;
+    transition: color 0.3s;
+    user-select: none;
 }
 .menuBoxes:last-child{
     border-right: none;
     padding-right: 0px;
 }
 .menuBoxes:hover{
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .contentSection1::before{
@@ -165,6 +174,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .down-angle>i{
     color: #C2FF42;
@@ -205,6 +215,7 @@ body {
     letter-spacing: 1px;    
     margin-bottom: 30px;
 }
+
 .contentSection2textBox3{
     font-family: 'oswald';
     font-weight: 300;
@@ -213,6 +224,7 @@ body {
     line-height: 35px;
     margin-bottom: 30px;
 }
+
 .detailBox1{
     display: flex;
     justify-content: center;
@@ -223,11 +235,15 @@ body {
     font-size: 24px;
     font-family: 'oswald';
     background-color: #FF3838;
+    border: 1px solid #FF3838;
     cursor: pointer;
     transition:background-color 0.5s;
-}
-.detailBox1:hover{
-    background-color: rgba(140, 6, 6, 1) ;
+
+    &:hover{
+        color: #FF3838;
+        background-color: transparent;
+    }
+
 }
 
 
@@ -284,11 +300,13 @@ body {
     font-size: 24px;
     font-family: 'oswald';
     background-color: #FF3838;
+    border: 1px solid #FF3838;
     cursor: pointer;
     transition: background-color 0.5s;
 }
 .detailBox2:hover{
-    background-color: rgba(140, 6, 6, 1) ;
+    color: #FF3838;
+    background-color: transparent;
 }
 
 
@@ -316,22 +334,26 @@ body {
     flex-wrap: wrap;
     gap: 2%;
 }
-.serviceBoxes{
+.serviceBoxContainer>a{
     width: 32%;
     height: 200px;
+    margin-bottom: 2%;
     padding: 15px 25px;
     background-color: #292929;
-    font-family: 'inter';
-    font-weight: 300;
-    font-size: 2.25rem;
     border-radius: 10px;
-    margin-bottom: 2%;
-    line-height: normal;
-    letter-spacing: 3px;
     cursor: pointer;
     transition: background-color 0.5s, padding 0.5s;
 }
-.serviceBoxes:hover{
+.serviceBoxes{
+    width: 100%;
+    height: 100%;
+    font-family: 'inter';
+    font-weight: 300;
+    font-size: 2.25rem;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+.serviceBoxContainer>a:hover{
     background-color: #C2FF42;
     padding: 15px 35px;
 }
@@ -380,8 +402,27 @@ body {
     letter-spacing: 2px;
     margin-bottom: 25px;
 }
+.serviceContentİndex{
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.5s; 
+}
+.listed{
+    max-height: 500px;
+    margin-top: 20px;
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+}
+.serviceContentİndexList{
+    padding-left: 40px;
+    margin: 25px 0;
+}
 .servicesDetailBox{
     width: 70px;
+    user-select: none;
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -393,6 +434,12 @@ body {
 .servicesDetailBox:hover{
     gap: 11px;
     padding-left: 3px;
+}
+.servicesDetailArrow{
+    transition: all 0.3s;
+}
+.servicesDetailArrow.listedArrow{
+    transform: rotate(90deg);
 }
 
 .gallerySectionContainer{
@@ -498,6 +545,80 @@ body {
     background-size: cover;
     background-position: center;
 }
+.mobilGalleryContentSection{
+    width: 100%;
+    aspect-ratio: 473/1000;
+    display: none;
+    flex-direction: column;
+    gap: 2.63157%;
+}
+.mobilGalleryTopSection{
+    width: 100%;
+    height: 22.36842%;
+    display: flex;
+    gap: 5.55555%;
+}
+.mobilGalleryTopİnBoxes{
+    width: 47.222225%;
+    height: 100%;
+    border-radius: 10px;
+}
+.mobilGalleryTopİnBoxes:first-child{
+    background: url(./Macware/13830684_Laptop_002\ [Converted]-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mobilGalleryTopİnBoxes:last-child{
+    background: url(./Macware/13830684_Laptop_002\ [Converted]-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mobilGalleryMidSection{
+    width: 100%;
+    height: 22.36842%;
+    background: url(./Macware/UI-UX\ 06.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.mobilGalleryBottomSection{
+    width: 100%;
+    height: 47.36842%;
+    display: flex;
+    gap: 5.55555%;
+}
+.mobilGalleryBottomLeftSection{
+    width: 47.222225%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5.55555%;
+}
+.mobileGalleryBottomLeftBoxes{
+    width: 100%;
+    height: 47.222225%;
+    border-radius: 10px;
+    
+}
+.mobileGalleryBottomLeftBoxes:first-child{
+    background: url(./Macware/UI-UX\ 13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mobileGalleryBottomLeftBoxes:last-child{
+    background: url(./Macware/13830684_Laptop_002\ [Converted]-03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mobilGalleryBottomRightSection{
+    width: 47.222225%;
+    height: 100%;
+    background: url(./Macware/UI-UX\ 01.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
 
 
 
@@ -575,11 +696,13 @@ body {
     font-size: 24px;
     font-family: 'oswald';
     background-color: #FF3838;
+    border: 1px solid #FF3838;
     cursor: pointer;
     transition: background-color 0.5s;
 }
 .sendButton:hover{
-    background-color: rgba(140, 6, 6, 1) ;
+    color: #FF3838;
+    background-color: transparent ;
 }
 
 .footerContainer{
@@ -657,7 +780,6 @@ body {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     } */
-    
     .greenLetter{
         color: #C2FF42;
     }
@@ -670,19 +792,21 @@ body {
     
     .yukari-btn {
         position: fixed;
+        display: inline-block;
         bottom: 20px;
         right: 20px;
         width: 65px;
         height: 65px;
         background-color: #C2FF42;
         color: #292929;
-        border: none;
         border-radius: 10px;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: bold;
-        cursor: pointer;
-        display: none;
         transition: opacity 0.3s, transform 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
     }
     
     .yukari-btn:hover {

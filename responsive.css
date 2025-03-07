@@ -16,7 +16,7 @@
     }
 }
 @media screen and (max-width:950px) {
-    .serviceBoxes{
+    .serviceBoxContainer>a{
         width: 48%;
         padding: 15px 25px;
         margin: 0 auto;
@@ -75,6 +75,14 @@
     }
     
 }
+@media screen and (max-width: 800px) {
+    .galleryContentSection{
+        display: none;
+    }
+    .mobilGalleryContentSection{
+        display: flex;
+    }
+}
 @media screen and (max-width: 725px) {
     .formFooter{
         flex-direction: column;
@@ -108,14 +116,16 @@
         word-break: break-word;
     }
 
-    .serviceBoxes{
+    .serviceBoxContainer>a{
         width: 85%;
         height: 200px;
-        display: flex;
-        align-items: center;
         margin-bottom: 5%;
     }
-    .serviceBoxes:last-child{
+    .serviceBoxes{
+        display: flex;
+        align-items: center;
+    }
+    .serviceBoxContainer>a:last-child{
         margin-bottom: 30px;
     }
 }
@@ -266,7 +276,7 @@
     .servicesSelectSectionContainer{
         word-break:break-word;
     }
-    .serviceBoxes{
+    .serviceBoxContainer>a{
         height: 1%;
     }
     .serviceTitle{
