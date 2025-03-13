@@ -108,6 +108,11 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
+.MenuTR{
+    width: 561.27px;
+    display: flex;
+    flex-wrap: wrap;
+}
 .menuBoxes{
     display: flex;
     justify-content: center;
@@ -411,7 +416,6 @@ a{
     transition: all 0.5s; 
 }
 .listed{
-    max-height: 500px;
     margin-top: 20px;
     max-height: 500px;
     opacity: 1;

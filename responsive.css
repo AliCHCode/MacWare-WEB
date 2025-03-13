@@ -72,11 +72,19 @@
     .Menu{
         width: 555.50px;
     }
+    .MenuTR{
+        width: 576.27px;
+    }
     .menuBoxes:last-child{
         padding-right: 15px;
     }
     
 }
+@media screen and (max-width:865px){
+    .listed{
+        max-height: 750px;
+    }
+} 
 @media screen and (max-width: 800px) {
     .galleryContentSection{
         display: none;
@@ -129,6 +137,10 @@
     }
     .serviceBoxContainer>a:last-child{
         margin-bottom: 30px;
+    }
+    .galleryHeaderSectionTR{
+        word-break: break-word;
+        hyphens: auto;
     }
 }
 @media screen and (max-width:619px) {
@@ -193,6 +205,17 @@
     
 
 }
+@media screen and (max-width:475px){
+    .listed{
+        max-height: 1000px;
+    }
+} 
+@media screen and (max-width:445px){
+    .contentSection1TR{
+        word-break:break-word;
+        hyphens: auto;
+    }
+}
 @media screen and (max-width:418px) {
     .Menu{
         justify-content: center;
@@ -250,6 +273,11 @@
         width: 84%;
     }
 }
+@media screen and (max-width:385px){
+    .listed{
+        max-height: 1500px;
+    }
+} 
 @media screen and (max-width: 351px) {
     .menuBoxes:nth-child(3){
         border-right: none;
@@ -305,6 +333,11 @@
         word-break: break-word;
     }
 }   
+@media screen and (max-width:280px){
+    .listed{
+        max-height: 3000px;
+    }
+} 
 @media screen and (max-width: 244px) {
     .menuBoxes:nth-child(2){
         border-right: none;

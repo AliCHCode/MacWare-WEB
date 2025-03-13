@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -40,8 +40,8 @@
         <a id="yukariCik" href="#top" class="yukari-btn">↑</a>
 
         <div class="LanguageBoxes">
-            <div class="LanguageBox LanguageBox1">EN</div>
-            <div class="LanguageBox LanguageBox2">TR</div>
+            <a class="LanguageBox LanguageBox1" href="./index.html">EN</a>
+            <a class="LanguageBox LanguageBox2" href="./TR-index.html">TR</a>
         </div>
 
         <header class="navbar">
@@ -106,15 +106,15 @@
         <div id="ServiceNumberOne" class="serviceTitleSectionContainer">
             <div class="serviceTitle greenLetter">UI/UX Design</div>
             <div class="serviceContent">
-                <div class="whiteLetter">Boost Your Power in Digital with SEO!</div>
+                <div class="whiteLetter">Impressive Experiences with User-Centered Designs!</div>
                 <div class="serviceContentİndex">
-                        We help your website rank higher in search engines, gain more organic traffic, and increase conversions. Strengthen your brand in the digital world with our data-driven strategies.
+                    As a professional agency specializing in user experience (UX) and user interface (UI) design, we create solutions that best represent your brand through aesthetic and functional digital experiences. By analyzing user needs, we deliver intuitive, accessible, and conversion-focused designs.
                         <ul class="serviceContentİndexList">
-                            <li>SEO-friendly content and technical optimization</li>
-                            <li>Keyword analysis and competitor research</li>
-                            <li>Backlink strategies and continuous performance tracking</li>
+                            <li>Unique and innovative UI designs</li>
+                            <li>User-friendly and effective UX solutions</li>
+                            <li>Seamless experience across mobile and web platforms</li>
                         </ul>
-                        Contact us to increase your visibility in the digital world and reach more customers!
+                        Contact us to make a difference in the digital world!
                 </div>
             </div>
             <div class="servicesDetailBox"><img class="servicesDetailArrow" src="./Macware/Vector 3.svg"  alt="directArrow">DETAIL</div>
@@ -258,11 +258,13 @@
                 <div class="formContent">Write us! Let's reach you and talk about our solutions</div>
             </div>
             <div class="formFillSection">
-                <input class="formBox" type="text" id="name" name="name" placeholder="NAME" required>
+                <input class="formBox" type="text" id="name" name="name" oninput="harfKontrol(event)" placeholder="NAME" required>
 
-                <input class="formBox" type="tel" id="phone" name="phone" placeholder="PHONE" required>
+                <input class="formBox" type="tel" id="phone" name="phone" oninput="telefonKontrol(event)" placeholder="PHONE" required>
 
                 <input class="formBox" type="email" id="email" name="email" placeholder="E-MAIL" required>
+
+                <input class="formBox" type="message" id="message" name="message" placeholder="MESSAGE" required>
             </div>
             <div class="formFooter">
                 <button class="sendButton" type="submit" onclick="sendMail()">SEND</button>
